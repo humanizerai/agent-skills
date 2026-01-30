@@ -53,9 +53,9 @@ Rewrite AI-generated text to make it undetectable. Uses credits (1 word = 1 cred
 ```
 
 Intensity options:
-- `light` - Subtle changes, preserves style
-- `medium` (default) - Balanced rewrites
-- `aggressive` - Maximum bypass, significant changes
+- `light` (Light) - Subtle changes, preserves style
+- `medium` (Medium) - Balanced rewrites (default)
+- `aggressive` (Bypass) - Maximum bypass mode
 
 ## API Reference
 

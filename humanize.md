@@ -29,11 +29,11 @@ Default intensity is `medium`.
 
 ## Intensity Levels
 
-| Level | Description | Best For |
-|-------|-------------|----------|
-| light | Subtle changes, preserves style | Already-edited text, low AI scores |
-| medium | Balanced rewrites | Most use cases |
-| aggressive | Maximum bypass, significant changes | High AI scores, strict detectors |
+| Value | Name | Description | Best For |
+|-------|------|-------------|----------|
+| `light` | Light | Subtle changes, preserves style | Already-edited text, low AI scores |
+| `medium` | Medium | Balanced rewrites (default) | Most use cases |
+| `aggressive` | Bypass | Maximum bypass mode | High AI scores, strict detectors |
 
 ## API Call
 

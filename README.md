@@ -52,11 +52,11 @@ With intensity option:
 
 ## Intensity Levels
 
-| Level | Description | Use Case |
-|-------|-------------|----------|
-| `light` | Subtle changes | Low AI scores, preserve style |
-| `medium` | Balanced (default) | Most use cases |
-| `aggressive` | Maximum bypass | High AI scores, strict detectors |
+| Level | Name | Description | Use Case |
+|-------|------|-------------|----------|
+| `light` | Light | Subtle changes | Low AI scores, preserve style |
+| `medium` | Medium | Balanced (default) | Most use cases |
+| `aggressive` | Bypass | Maximum bypass mode | High AI scores, strict detectors |
 
 ## Requirements
 
