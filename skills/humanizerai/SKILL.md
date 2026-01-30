@@ -1,7 +1,12 @@
 ---
 name: humanizerai
 description: Detect AI-generated content and humanize text to bypass AI detectors. Use when the user wants to check if text is AI-generated, make AI text undetectable, or bypass GPTZero/Turnitin.
-user-invocable: true
+license: MIT
+metadata:
+  author: humanizerai
+  version: "1.0.0"
+  website: https://humanizerai.com
+allowed-tools: WebFetch Bash
 ---
 
 # HumanizerAI Skill
