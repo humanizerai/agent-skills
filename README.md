@@ -41,7 +41,7 @@ cp -r agent-skills/skills/humanize .claude/skills/
 
 1. Get an API key from [humanizerai.com](https://humanizerai.com)
 2. Subscribe to Pro ($19.99/mo) or Business ($49.99/mo) plan
-3. Go to **Settings > API Keys** and create a key
+3. Click your **profile picture** → **Settings** → **API Keys** and create a key
 4. Set your API key as an environment variable:
 
 ```bash
