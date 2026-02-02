@@ -19,9 +19,10 @@ In Claude Code, run:
 
 ```
 /plugin marketplace add humanizerai/agent-skills
-/plugin install detect-ai@humanizerai
-/plugin install humanize@humanizerai
+/plugin install humanizerai@humanizerai
 ```
+
+This installs both `/detect-ai` and `/humanize` commands.
 
 ### Option 2: Using npx
 
