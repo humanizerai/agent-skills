@@ -1,15 +1,19 @@
 # HumanizerAI Agent Skills
 
-Agent skills for [HumanizerAI](https://humanizerai.com) - AI detection and text humanization.
+AI detection and text humanization skills for [Claude Code](https://claude.ai/code), [Cursor](https://cursor.sh), and other AI coding assistants.
+
+**Detect AI-generated content** and **humanize text** to bypass GPTZero, Turnitin, Originality.ai, and other AI detectors.
 
 ## Features
 
-- `/detect-ai` - Check if text is AI-generated (free)
-- `/humanize` - Make AI text undetectable
+| Command | Description | Credits |
+|---------|-------------|---------|
+| `/detect-ai` | Check if text is AI-generated | Free |
+| `/humanize` | Make AI text undetectable | 1 word = 1 credit |
 
 ## Installation
 
-### Option 1: Using npx (Recommended)
+### Option 1: Claude Code Plugin (Recommended)
 
 ```bash
 npx skills add humanizerai/agent-skills
@@ -22,19 +26,18 @@ git clone https://github.com/humanizerai/agent-skills.git
 cp -r agent-skills/skills/humanizerai .claude/skills/
 ```
 
-### Option 3: Manual copy
-
-Copy the skill files to your project's `.claude/skills/humanizerai/` directory:
+### Option 3: Git Submodule
 
 ```bash
-mkdir -p .claude/skills/humanizerai
-# Copy files from skills/humanizerai/ to .claude/skills/humanizerai/
+git submodule add https://github.com/humanizerai/agent-skills.git .claude/skills/humanizerai-skills
 ```
 
 ## Setup
 
 1. Get an API key from [humanizerai.com](https://humanizerai.com)
-2. Set your API key as an environment variable:
+2. Subscribe to Pro ($19.99/mo) or Business ($49.99/mo) plan
+3. Go to **Settings > API Keys** and create a key
+4. Set your API key as an environment variable:
 
 ```bash
 export HUMANIZERAI_API_KEY="hum_your_api_key_here"
@@ -48,13 +51,17 @@ export HUMANIZERAI_API_KEY="hum_your_api_key_here"
 /detect-ai [your text here]
 ```
 
+Returns a score (0-100) with detailed metrics showing how likely the text is AI-generated.
+
 ### Humanize Text
 
 ```
 /humanize [your text here]
 ```
 
-With intensity option:
+Transforms AI-generated text into natural human writing that bypasses AI detectors.
+
+**With intensity option:**
 
 ```
 /humanize --intensity aggressive [your text here]
@@ -62,25 +69,38 @@ With intensity option:
 
 ## Intensity Levels
 
-| Value | Name | Description | Use Case |
+| Value | Name | Description | Best For |
 |-------|------|-------------|----------|
-| `light` | Light | Subtle changes | Low AI scores, preserve style |
-| `medium` | Medium | Balanced (default) | Most use cases |
+| `light` | Light | Subtle changes, preserves style | Low AI scores, preserve voice |
+| `medium` | Medium | Balanced rewrites (default) | Most use cases |
 | `aggressive` | Bypass | Maximum bypass mode | High AI scores, strict detectors |
 
-## Requirements
+## Example Workflow
 
-- HumanizerAI Pro or Business plan
-- API key (get at https://humanizerai.com/dashboard)
+1. **Check your text**: `/detect-ai [paste your AI content]`
+2. **See the score**: Get detailed metrics and recommendations
+3. **Humanize if needed**: `/humanize [your text]`
+4. **Verify results**: `/detect-ai [humanized text]`
+
+## Bypasses These Detectors
+
+- GPTZero
+- Turnitin
+- Originality.ai
+- Copyleaks
+- ZeroGPT
+- Winston AI
+- And more...
 
 ## Pricing
 
-- **Detection**: Free and unlimited
-- **Humanization**: 1 credit = 1 word
+| Plan | Price | Words/Month | API Access |
+|------|-------|-------------|------------|
+| Pro | $19.99/mo | 50,000 | Yes |
+| Business | $49.99/mo | 200,000 | Yes |
 
-Plans:
-- Pro: $19.99/mo - 50,000 words/month
-- Business: $49.99/mo - 200,000 words/month
+- **Detection**: Always free and unlimited
+- **Humanization**: 1 credit = 1 word
 
 ## Compatibility
 
@@ -90,10 +110,14 @@ Works with:
 - [Windsurf](https://codeium.com/windsurf)
 - Any agent supporting the [Agent Skills](https://agentskills.io) format
 
+## API Documentation
+
+Full API docs: [humanizerai.com/docs/api](https://humanizerai.com/docs/api)
+
 ## Support
 
-- Documentation: https://humanizerai.com/docs/api
-- Support: https://humanizerai.com/support
+- Website: [humanizerai.com](https://humanizerai.com)
+- Support: [humanizerai.com/support](https://humanizerai.com/support)
 
 ## License
 

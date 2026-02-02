@@ -1,11 +1,22 @@
 ---
 name: humanizerai
-description: Detect AI-generated content and humanize text to bypass AI detectors. Use when the user wants to check if text is AI-generated, make AI text undetectable, or bypass GPTZero/Turnitin.
+description: Detect AI-generated content and humanize text to bypass AI detectors like GPTZero, Turnitin, Originality.ai, Copyleaks, and ZeroGPT. Use when the user wants to check if text is AI-generated, make AI text undetectable, humanize ChatGPT/Claude output, or bypass AI content detection.
 license: MIT
 metadata:
   author: humanizerai
-  version: "1.0.0"
+  version: "1.0.1"
   website: https://humanizerai.com
+  keywords:
+    - ai-detection
+    - humanize
+    - ai-humanizer
+    - gptzero
+    - turnitin
+    - originality-ai
+    - undetectable
+    - bypass-ai-detection
+    - chatgpt
+    - claude
 allowed-tools: WebFetch Bash
 ---
 
