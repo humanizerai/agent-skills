@@ -4,12 +4,12 @@ AI detection and text humanization skills for [Claude Code](https://claude.ai/co
 
 **Detect AI-generated content** and **humanize text** to bypass GPTZero, Turnitin, Originality.ai, and other AI detectors.
 
-## Features
+## Skills
 
-| Command | Description | Credits |
-|---------|-------------|---------|
-| `/detect-ai` | Check if text is AI-generated | Free |
-| `/humanize` | Make AI text undetectable | 1 word = 1 credit |
+| Skill | Command | Description | Credits |
+|-------|---------|-------------|---------|
+| detect-ai | `/detect-ai` | Check if text is AI-generated | Free |
+| humanize | `/humanize` | Make AI text undetectable | 1 word = 1 credit |
 
 ## Installation
 
@@ -19,7 +19,8 @@ In Claude Code, run:
 
 ```
 /plugin marketplace add humanizerai/agent-skills
-/plugin install humanizerai@humanizerai
+/plugin install detect-ai@humanizerai
+/plugin install humanize@humanizerai
 ```
 
 ### Option 2: Using npx
@@ -32,13 +33,8 @@ npx skills add humanizerai/agent-skills
 
 ```bash
 git clone https://github.com/humanizerai/agent-skills.git
-cp -r agent-skills/skills/humanizerai .claude/skills/
-```
-
-### Option 4: Git Submodule
-
-```bash
-git submodule add https://github.com/humanizerai/agent-skills.git .claude/skills/humanizerai-skills
+cp -r agent-skills/skills/detect-ai .claude/skills/
+cp -r agent-skills/skills/humanize .claude/skills/
 ```
 
 ## Setup
