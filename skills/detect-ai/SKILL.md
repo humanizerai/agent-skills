@@ -31,27 +31,49 @@ Content-Type: application/json
 }
 ```
 
-## Response Format
+## API Response Format
 
-Present results like this:
+The API returns JSON like this:
+
+```json
+{
+  "score": {
+    "overall": 82,
+    "perplexity": 96,
+    "burstiness": 15,
+    "readability": 23,
+    "satPercent": 3,
+    "simplicity": 35,
+    "ngramScore": 8,
+    "averageSentenceLength": 21
+  },
+  "wordCount": 82,
+  "sentenceCount": 4,
+  "verdict": "ai"
+}
+```
+
+**IMPORTANT:** The main AI score is `score.overall` (not `score` directly). This is the score to display to the user.
+
+## Present Results Like This
 
 ```
 ## AI Detection Results
 
-**Score:** X/100 (verdict)
-**Words Analyzed:** N
+**Score:** [score.overall]/100 ([verdict])
+**Words Analyzed:** [wordCount]
 
 ### Metrics
-- Perplexity: X (interpretation)
-- Burstiness: X (interpretation)
-- Readability: X
-- N-gram Score: X
+- Perplexity: [score.perplexity]
+- Burstiness: [score.burstiness]
+- Readability: [score.readability]
+- N-gram Score: [score.ngramScore]
 
 ### Recommendation
-[Based on score, suggest whether to humanize]
+[Based on score.overall, suggest whether to humanize]
 ```
 
-## Score Interpretation
+## Score Interpretation (use score.overall)
 
 - 0-20: Human-written content
 - 21-40: Likely human, minor AI patterns
