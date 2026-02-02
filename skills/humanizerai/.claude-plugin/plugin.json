@@ -1,0 +1,22 @@
+{
+  "name": "humanizerai",
+  "description": "Detect AI-generated content and humanize text to bypass AI detectors like GPTZero, Turnitin, and Originality.ai",
+  "version": "1.0.1",
+  "author": {
+    "name": "HumanizerAI",
+    "email": "support@humanizerai.com"
+  },
+  "homepage": "https://humanizerai.com",
+  "repository": "https://github.com/humanizerai/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "ai-detection",
+    "humanize",
+    "ai-humanizer",
+    "gptzero",
+    "turnitin",
+    "originality-ai",
+    "undetectable",
+    "bypass-ai-detection"
+  ]
+}
