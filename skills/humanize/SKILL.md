@@ -2,7 +2,7 @@
 name: humanize
 description: Transform AI-generated text into natural, human-like content that bypasses AI detectors like GPTZero, Turnitin, and Originality.ai. Uses credits based on word count.
 user-invocable: true
-argument-hint: [text to humanize] [--intensity light|medium|aggressive]
+argument-hint: "[text to humanize] [--intensity light|medium|aggressive]"
 allowed-tools: WebFetch
 ---
 
