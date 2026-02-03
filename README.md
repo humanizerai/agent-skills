@@ -13,24 +13,15 @@ AI detection and text humanization skills for [Claude Code](https://claude.ai/co
 
 ## Installation
 
-### Option 1: Claude Code Plugin Marketplace (Recommended)
-
-In Claude Code, run:
-
-```
-/plugin marketplace add humanizerai/agent-skills
-/plugin install humanizerai@humanizerai
-```
-
-This installs both `/detect-ai` and `/humanize` commands.
-
-### Option 2: Using npx
+### Using npx (Recommended)
 
 ```bash
 npx skills add humanizerai/agent-skills
 ```
 
-### Option 3: Clone to your project
+Installs both `/detect-ai` and `/humanize` commands to Claude Code, Cursor, Codex, and other supported agents.
+
+### Manual Installation
 
 ```bash
 git clone https://github.com/humanizerai/agent-skills.git
