@@ -10,6 +10,10 @@ AI detection and text humanization skills for [Claude Code](https://claude.ai/co
 |-------|---------|-------------|---------|
 | detect-ai | `/detect-ai` | Check if text is AI-generated | Free |
 | humanize | `/humanize` | Make AI text undetectable | 1 word = 1 credit |
+| cold-email | `/cold-email` | Write cold emails using proven frameworks | Free |
+| follow-up | `/follow-up` | Write follow-up emails that re-engage | Free |
+| readability | `/readability` | Analyze text readability metrics | Free |
+| word-stats | `/word-stats` | Get word count and text statistics | Free |
 
 ## Installation
 
